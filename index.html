@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bargeldrechner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kasse</h1>
+        <div class="eingabe">
+            <label for="zuZahlen">Produkt kostet: (€):</label>
+            <input type="number" id="zuZahlen" step="0.01" min="0">
+        </div>
+        <div class="eingabe">
+            <label for="bezahlt">Bezahlter Betrag vom Kunden: (€):</label>
+            <input type="number" id="bezahlt" step="0.01" min="0">
+        </div>
+        <button onclick="displayChange()">Berechnen</button> <!--Ruft die js-function 'displayChange' mit klick auf Button auf-->
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+ 
